@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row d-flex justify-content-center">
-        <div class="card mt-5">
+        <div class="card mt-5 w-50">
             <div class="card-header">Login</div>
             <div class="card-body">
                 <div class="card-text">
