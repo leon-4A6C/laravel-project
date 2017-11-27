@@ -27,7 +27,7 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <ul class="navbar-nav navbar-right">
+    <ul class="navbar-nav navbar-right mr-5">
         <!-- Authentication Links -->
         @guest
             <li><a class="nav-link text-primary" href="{{ route('login') }}">Login</a></li>
