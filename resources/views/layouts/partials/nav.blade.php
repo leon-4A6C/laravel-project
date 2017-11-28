@@ -33,7 +33,7 @@
             <li><a class="nav-link text-primary" href="{{ route('login') }}">Login</a></li>
             <li><a class="nav-link" href="{{ route('register') }}">Register</a></li>
         @else
-            <li class="dropdown">
+            <li class="dropdown nav-link">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                     {{ Auth::user()->full_name }} <span class="caret"></span>
                 </a>
@@ -50,6 +50,23 @@
                 </div>
             </li>
         @endguest
+
+        <li class="dropdown nav-link">
+          <a href="#" class="dropdown-toggle oi oi-cart" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right mh-75" style="width: 400px; max-height: 75vh; overflow-y: auto;">
+            <div class="container">
+              @include("layouts.components.cart_item")
+              @include("layouts.components.cart_item")
+              @include("layouts.components.cart_item")
+              @include("layouts.components.cart_item")
+              @include("layouts.components.cart_item")
+              @include("layouts.components.cart_item")
+            </div>
+          </div>
+        </li>
+
     </ul>
   </div>
 </nav>

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	@include("layouts._partials.nav")
+	@include("layouts.partials.nav")
 
 	<main>
 		@yield('content')
