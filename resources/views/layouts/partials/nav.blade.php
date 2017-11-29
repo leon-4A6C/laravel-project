@@ -56,14 +56,14 @@
             <span class="caret"></span>
           </a>
           <div class="dropdown-menu dropdown-menu-right mh-75" style="width: 400px; max-height: 75vh; overflow-y: auto;">
-            <div class="container">
+            <ul class="container">
               @include("layouts.components.cart_item")
               @include("layouts.components.cart_item")
               @include("layouts.components.cart_item")
               @include("layouts.components.cart_item")
               @include("layouts.components.cart_item")
               @include("layouts.components.cart_item")
-            </div>
+            </ul>
           </div>
         </li>
 
