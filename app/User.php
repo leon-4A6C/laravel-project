@@ -31,4 +31,8 @@ class User extends Authenticatable
         return ucfirst($this->first_name) . " " . $this->last_name;
     }
 
+    public function role() {
+        return $this->belongsTo(App\Role::class);
+    }
+
 }

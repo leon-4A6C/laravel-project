@@ -8,6 +8,6 @@ class Category extends Model
 {
     //
     public function Products() {
-        return $this->belongsToMany(App\Category);
+        return $this->belongsToMany(App\Category::class);
     }
 }
