@@ -8,6 +8,6 @@ class Product extends Model
 {
     //
     public function categories() {
-        return $this->belongsToMany(App\Product::class);
+        return $this->belongsToMany(\App\Product::class);
     }
 }

@@ -32,9 +32,7 @@ class User extends Authenticatable
     }
 
     public function role() {
-        return $this->belongsTo(App\Role::class)->withDefault([
-            "name" => "user"
-        ]);
+        return $this->belongsTo(\App\Role::class);
     }
 
 }
