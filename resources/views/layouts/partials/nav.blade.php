@@ -26,6 +26,16 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
+      @admin
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            admin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route("products.create") }}">Add product</a>
+          </div>
+        </li>
+      @endadmin
     </ul>
     <ul class="navbar-nav navbar-right mr-5">
         <!-- Authentication Links -->
